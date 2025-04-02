@@ -1,0 +1,221 @@
+/* .protest-riot-regular {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+/* font-family: "Playfair Display", serif; */
+/* =========== global ============== */
+:root {
+  --main-font-family: "Protest Riot", sans-serif;
+  --second-font-family: "Playfair Display", serif;
+  --title-font-family: "Playfair Display", serif;
+  --main-color: rgba(214, 46, 51, 0.6);
+  --title-color: #e68285;
+  --body-background-color: #cccccc;
+  --main-white-color: #fff;
+  --main-section-padding: 80px;
+  /* scroll-behavior: auto; */
+
+}
+/* ::selection {
+    color: var(--main-color);
+} */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* =========== home section ============== */
+#home {
+  background-image: linear-gradient(var(--main-color) 0% 100%),
+    url("../imgs/events-heavenly-header.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+#home .main-home {
+  height: 100vh;
+}
+h1 {
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 70px;
+}
+#home .main-home p {
+  font-size: 30px;
+  font-family: var(--second-font-family);
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* =========== side bar ============== */
+#sideBar {
+  width: 200px;
+  position: fixed;
+  left: -200px;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  font-family: var(--main-font-family);
+  background-color: #000;
+}
+#sideBar .links {
+  color: var(--main-white-color);
+  height: 100vh;
+  white-space: nowrap;
+  width: 100%;
+}
+#sideBar .links i {
+  font-size: 30px;
+  padding: 15px;
+
+  /* float: right; */
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+#sideBar .links a {
+  color: var(--main-white-color);
+  font-size: 25px;
+  margin-block: 20px;
+  transition: 0.4s all;
+}
+#sideBar .links a:hover,
+#sideBar .links i:hover {
+  color: var(--main-color);
+}
+#sideBar .links li {
+  padding-block: 20px;
+}
+ .icon {
+  color: var(--main-white-color);
+  cursor: pointer;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+ .icon i {
+  padding-inline: 8px;
+}
+
+/* =========== singer section ============== */
+#duration {
+  margin-top: 40px;
+}
+#duration .singers-details {
+  padding: var(--main-section-padding);
+  width: 75%;
+  margin: auto;
+}
+#duration .singer-title,
+#duration .singer-description {
+  text-align: center;
+  padding: 15px 25px;
+  margin: 0;
+}
+#duration .singer-title {
+  background-color: var(--title-color);
+  font-family: var(--main-font-family);
+  border-bottom: 1px solid #00000048;
+  cursor: pointer;
+}
+#duration .singer-description {
+  background-color: var(--body-background-color);
+}
+#duration .singer-description:not(.appear) {
+  display: none;
+}
+
+/* =========== counter section ============== */
+
+#details {
+  background-image: linear-gradient(var(--main-color) 0% 100%),
+    url("../imgs/invitation-2508607__340.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  min-height: 350px;
+  margin-bottom: var(--main-section-padding);
+  margin-top: 40px;
+}
+
+#details .bord {
+  border: 1px solid #fff;
+  text-align: center;
+  padding: var(--main-section-padding);
+  font-size: 35px;
+  font-weight: 500;
+  font-family: var(--main-font-family);
+  color: #fff;
+}
+
+/* =========== Contact section ============== */
+#contact {
+  margin-block: var(--main-section-padding);
+}
+#contact h2,
+#contact h4 {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+}
+#contact h2 {
+  font-size: 45px;
+}
+#contact ul li a {
+  border: 1px solid gray;
+  padding: 10px;
+  transition: 0.3s background-color;
+}
+#contact ul li a:hover {
+  background-color: var(--main-color);
+  /* border-color: transparent; */
+}
+#contact .btn,
+#contact .form-control {
+  border-radius: 0px;
+}
+#contact textarea {
+  height: 150px;
+  /* resize: none; */
+}
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+  #duration .singers-details {
+    width: 100%;
+    padding: 50px 0;
+  }
+  #contact .forms {
+    box-shadow: 0 0 10px var(--main-color);
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 40px;
+  }
+  #home .main-home p {
+    font-size: 20px;
+  }
+.icon {
+    font-size: 22px;
+    top: 60%;
+  }
+}
+
+@media (max-width: 575.98px) {
+}
